@@ -5,7 +5,7 @@ class ListItemsController < ProtectedController
 
   # GET /list_items
   def index
-    @list_items = ListItem.all
+    @list_items = current_user.list_items.all
 
     render json: @list_items
   end
