@@ -7,8 +7,10 @@ curl "http://localhost:4741/list_items/${ID}" \
   --header "Authorization: Token token=${TOKEN}" \
   --data '{
     "list_item": {
-      "completed": "'"${COMP}"'",
-      "title": "'"${TITLE}"'"
+      "title": "'"${TITLE}"'",
+      "description": "'"${DESC}"'",
+      "due_on": "'"${DUE}"'",
+      "completed": "'"${COMP}"'"
     }
   }'
 
