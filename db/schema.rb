@@ -31,11 +31,11 @@ ActiveRecord::Schema.define(version: 2020_04_07_015901) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.bigint "user_id"
-    t.string "item1"
-    t.string "item2"
-    t.string "item3"
-    t.string "item4"
-    t.string "item5"
+    t.text "item1"
+    t.text "item2"
+    t.text "item3"
+    t.text "item4"
+    t.text "item5"
     t.index ["user_id"], name: "index_list_items_on_user_id"
   end
 
