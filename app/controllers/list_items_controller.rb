@@ -49,7 +49,8 @@ class ListItemsController < ProtectedController
 
   # Only allow a trusted parameter "white list" through.
   def list_item_params
-    params.require(:list_item).permit(:title, :description, :due_on,
-                                      :completed, :user_id)
+    params.require(:list_item).permit(:title, :description, :due_on, :completed,
+                                      :item1, :item2, :item3, :item4, :item5,
+                                      :user_id)
   end
 end

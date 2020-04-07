@@ -9,6 +9,11 @@ curl "http://localhost:4741/list_items" \
     "list_item": {
       "title": "'"${TITLE}"'",
       "description": "'"${DESC}"'",
+      "ITEM1": "'"${ITEM1}"'",
+      "ITEM2": "'"${ITEM2}"'",
+      "ITEM3": "'"${ITEM3}"'",
+      "ITEM4": "'"${ITEM4}"'",
+      "ITEM5": "'"${ITEM5}"'",
       "due_on": "'"${DUE}"'",
       "completed": "'"${COMP}"'"
     }
